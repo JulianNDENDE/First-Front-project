@@ -29,22 +29,27 @@
 </template>
 
 <script>
-export default {
-  name: "App",
-  data() {
-    return {
-      youtubeLink: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
-    };
-  },
-  methods: {
-    handleClick(event, ref) {
-      this.$refs[ref][event]();
+  import { LazyYoutube } from 'vue-lazytube'
+
+  export default {
+    name: "App",
+    components: {
+      LazyYoutube
     },
-    handleSearch(event) {
-      this.youtubeLink = event.target.value;
+    data() {
+      return {
+        youtubeLink: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+      };
     },
-  },
-};
+    methods: {
+      handleClick(event, ref) {
+        this.$refs[ref][event]();
+      },
+      handleSearch(event) {
+        this.youtubeLink = event.target.value;
+      },
+    },
+  };
 </script>
 
 <style>
