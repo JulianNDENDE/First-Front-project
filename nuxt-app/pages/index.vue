@@ -4,45 +4,25 @@
     <h2 class="font-normal leading-normal text-center">
       Landing page with YouTube player
     </h2>
-  </div>
-  <input
-    class="input"
-    type="text"
-    @keydown.enter="handleSearch($event, 'youtube')"
-    placeholder="Youtube Video Link or Video Id"
-    :value="youtubeLink"
-  />
-
-  <LazyYoutube
-    ref="youtubeLazyVideo"
-    :src="youtubeLink"
-    max-width="720px"
-    aspect-ratio="16:9"
-    thumbnail-quality="standard"
-  />
-  <div class="buttons">
-    <button @click="handleClick('playVideo', 'youtubeLazyVideo')">Play</button>
-    <button @click="handleClick('stopVideo', 'youtubeLazyVideo')">Stop</button>
-    <button @click="handleClick('pauseVideo', 'youtubeLazyVideo')">Pause</button>
-    <button @click="handleClick('resetView', 'youtubeLazyVideo')">Reset</button>
+    <YouTube
+      class="mx-auto my-8"
+      src="https://youtu.be/tQG6jYy9xto"
+      @ready="onReady"
+      ref="youtube"
+    />
   </div>
 </template>
 
 <script>
-export default {
-  name: "lazyVideo",
-  data() {
-    return {
-      youtubeLink: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
-    };
-  },
+import { defineComponent } from "vue";
+import YouTube from "vue3-youtube";
+
+export default defineComponent({
+  components: { YouTube },
   methods: {
-    handleClick(event, ref) {
-      this.$refs[ref][event]();
-    },
-    handleSearch(event) {
-      if (platform === "youtube") this.youtubeLink = event.target.value;
+    onReady() {
+      this.$refs.youtube.playVideo();
     },
   },
-};
+});
 </script>

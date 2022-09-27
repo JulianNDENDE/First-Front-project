@@ -1,19 +1,9 @@
-import { defineNuxtConfig } from "nuxt/config";
+import { defineNuxtConfig } from 'nuxt/config'
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  typescript: {
-    shim: false,
-  },
-  build: {
-      postcss: {
-          postcssOptions: {
-              plugins: {
-                  tailwindcss: {},
-                  autoprefixer: {},
-                },
-            },
-        },
-    },
-    css: ["~/assets/css/tailwind.css"],
-});
+     components: true,
+	 modules: [ '@nuxtjs/tailwindcss' ],
+	 buildModules: [],
+	 css: ['@/assets/css/tailwind.css'],
+})
