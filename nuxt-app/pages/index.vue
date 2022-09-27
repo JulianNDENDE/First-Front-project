@@ -4,8 +4,16 @@
     <h2 class="font-normal leading-normal text-center">
       Landing page with YouTube player
     </h2>
+
+    <input
+      type="text"
+      class="container mx-auto my-8 p-2"
+      name=""
+      placeholder="search here..."
+    />
+
     <YouTube
-      class="mx-auto my-8"
+      class="container mx-auto my-8"
       src="https://youtu.be/tQG6jYy9xto"
       @ready="onReady"
       ref="youtube"
