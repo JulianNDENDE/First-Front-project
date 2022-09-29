@@ -10,4 +10,4 @@ cd nuxt-app
 
 # Main instructions
 
-After that follow the instructions [here](nuxt-app/README.md)
+Now follow the instructions [here](nuxt-app/README.md)
