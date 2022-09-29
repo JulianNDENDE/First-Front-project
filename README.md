@@ -8,4 +8,6 @@ Go to the nuxt-app folder
 cd nuxt-app
 ```
 
-After that follow the instructions on the nuxt-app/README.md file
+# Main instructions
+
+After that follow the instructions [here](nuxt-app/README.md)
