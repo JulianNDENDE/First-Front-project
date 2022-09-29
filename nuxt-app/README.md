@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Project base installation
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
@@ -39,4 +39,17 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+## Packages
+
+```
+#npm
+npm install vue3-youtube
+
+# yarn
+yarn add vue3-youtube
+```
+
+## Documentations
+
+* Checkout the [vue3-youtube package documentation](https://www.npmjs.com/package/vue3-youtube) for more information.  
+* Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.  
