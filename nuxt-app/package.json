@@ -16,10 +16,6 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.7",
-    "@videojs-player/vue": "^1.0.0",
-    "nuxt-video-player": "^1.0.17",
-    "video.js": "^7.20.3",
     "vue3-youtube": "^0.1.9"
   }
 }

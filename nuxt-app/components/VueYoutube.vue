@@ -8,8 +8,11 @@
   />
 
   <YouTube
-    class="container mx-auto my-8"
+    class="mx-auto my-auto w-full h-full"
     :src="youtubeLink"
+    width=100%
+    height=720
+    aspectRatio="16:9"
     @ready="onReady"
     ref="youtube"
   />
