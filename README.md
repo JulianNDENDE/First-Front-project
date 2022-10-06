@@ -1,5 +1,8 @@
 # First-Front-project
-Making a landing page with a youtube player in it. Using Nuxt3 - Tailwind - DaisyUI
+Learning new Vue3 concepts, in different application cases
+
+* Making a landing page with a search bar and a youtube player on it.
+* Adding data base client connection with magic link.
 
 ## Project setup
 

@@ -41,7 +41,8 @@ npm run preview
 
 ## Packages
 
-```
+#### Vue3-youtube
+```bash
 #npm
 npm install vue3-youtube
 
@@ -49,7 +50,15 @@ npm install vue3-youtube
 yarn add vue3-youtube
 ```
 
-## Documentations
+#### nuxt/Supabase
+```bash
+#npm
+npm install @nuxtjs/supabase --save-dev
+```
 
-* Checkout the [vue3-youtube package documentation](https://www.npmjs.com/package/vue3-youtube) for more information.  
-* Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.  
+## Documentations
+For more information, check out the links below.
+
+* The [vue3-youtube package documentation](https://www.npmjs.com/package/vue3-youtube).  
+* The [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets).  
+* The [Supabase documentation](https://supabase.com/docs/guides/with-nuxt-3).
