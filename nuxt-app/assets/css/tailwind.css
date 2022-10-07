@@ -33,14 +33,10 @@
   padding: 10px;
 }
 
-intpu:valid {
+input:focus:valid {
   box-shadow: 0 0 5px 1px #090;
 }
 
-input:invalid {
-  box-shadow: 0 0 5px 1px red;
-}
-
 input:focus:invalid {
-  outline: none;
+  box-shadow: 0 0 5px 1px red;
 }

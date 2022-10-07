@@ -14,11 +14,7 @@ export default {
     validEmail(event) {
       const email = event.target.value;
       const emailRegex = /^([A-Za-z0-9_\-.+])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,})$/;
-      if (emailRegex.test(email)) {
-        alert("Valid Email");
-      } else {
-        alert("Invalid Email");
-      }
+      return emailRegex.test(email);
     },
   },
 };
