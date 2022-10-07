@@ -16,10 +16,10 @@
     <Auth v-else />
   </div>
 
-  <div id="InputControl" class="container mx-auto bg-gray-300 p-8 my-8">
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
     <h1 class="font-bold text-black text-4xl text-center">Input field Control</h1>
     <h2 class="font-bold text-black">Email :</h2>
-    <InputControl />
+    <email-input />
   </div>
 </template>
 
