@@ -1,12 +1,12 @@
 <template>
-  <div class="container mx-auto bg-gray-300 p-8 my-8">
+  <div class="container mx-auto bg-gray-300 p-8 my-8 w-full h-full">
     <h1 class="font-bold text-black text-4xl text-center">YouTube Video Player</h1>
     <h2 class="font-normal leading-normal text-center">
       Landing page with YouTube player
     </h2>
 
     <div class="container mx-auto my-auto">
-      <VueYoutube />
+      <youtubePlayer />
     </div>
   </div>
 

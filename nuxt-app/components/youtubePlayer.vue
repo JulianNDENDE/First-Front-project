@@ -7,7 +7,17 @@
     :value="youtubeLink"
   />
 
-  <YouTube
+  <iframe
+    class="mx-auto my-auto"
+    src="https://www.youtube.com/embed/paDfNTq0Lbs"
+    width="100%"
+    height="720"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <!-- <YouTube
     class="mx-auto my-auto w-full h-full"
     :src="youtubeLink"
     width=100%
@@ -15,7 +25,7 @@
     aspectRatio="16:9"
     @ready="onReady"
     ref="youtube"
-  />
+  /> -->
 </template>
 
 <script>
@@ -25,7 +35,7 @@ import YouTube from "vue3-youtube";
 export default defineComponent({
   data() {
     return {
-      youtubeLink: "https://youtu.be/tQG6jYy9xto",
+      youtubeLink: "https://www.youtube.com/embed/paDfNTq0Lbs",
     };
   },
   components: { YouTube },
