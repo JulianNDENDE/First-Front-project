@@ -3,7 +3,7 @@
     type="email"
     class="search-click container mx-auto my-2 p-2"
     placeholder="Enter your email here..."
-    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+    required pattern="^([A-Za-z0-9_\-.+])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,})$"
     @keydown.enter="validEmail($event)"
   />
 </template>
