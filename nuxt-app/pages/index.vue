@@ -21,6 +21,11 @@
     <h2 class="font-bold text-black">Email :</h2>
     <email-input />
   </div>
+
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
+    <h2 class="font-bold text-black">Town research :</h2>
+    <search-town />
+  </div>
 </template>
 
 <script setup>
