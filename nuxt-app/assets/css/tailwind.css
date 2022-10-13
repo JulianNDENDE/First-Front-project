@@ -33,10 +33,10 @@
   padding: 10px;
 }
 
-input:focus:valid {
-  box-shadow: 0 0 5px 1px #090;
+.check-email:focus:vaild {
+  box-shadow: 0 0 5px 1px green;
 }
 
-input:focus:invalid {
+.check-email:focus:invalid {
   box-shadow: 0 0 5px 1px red;
 }
