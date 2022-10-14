@@ -41,10 +41,11 @@ npm run preview
 
 ## Packages
 
-#### Vue3-youtube
+#### Vue Datepicker
 ```bash
-#npm
-npm install vue3-youtube
+yarn add @vuepic/vue-datepicker
+# or
+npm install @vuepic/vue-datepicker
 
 # yarn
 yarn add vue3-youtube
@@ -59,6 +60,6 @@ npm install @nuxtjs/supabase --save-dev
 ## Documentations
 For more information, check out the links below.
 
-* The [vue3-youtube package documentation](https://www.npmjs.com/package/vue3-youtube).  
+* The [Vue Datepicker package documentation](https://vue3datepicker.com/installation/).  
 * The [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets).  
 * The [Supabase documentation](https://supabase.com/docs/guides/with-nuxt-3).
