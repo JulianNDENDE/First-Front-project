@@ -14,7 +14,7 @@ const streetRef = useStreet();
 onMounted(async () => {
   streetRef.value.value = "";
   await useScript(
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyBLlb5_uR9wqw1JmbMobGINJveMbHVih0s&libraries=places"
+    "https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"
   );
   new google.maps.places.Autocomplete(streetRef.value);
 });
