@@ -27,6 +27,12 @@
     <h2 class="font-bold text-black">Town research :</h2>
     <search-town />
   </div>
+
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
+    <h1 class="font-bold text-black text-4xl text-center">Date picker</h1>
+    <h2 class="font-bold text-black">Date picker :</h2>
+    <datePicker />
+  </div>
 </template>
 
 <script setup>
