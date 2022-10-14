@@ -9,7 +9,7 @@
 
   <iframe
     class="mx-auto my-auto"
-    src="https://www.youtube.com/embed/paDfNTq0Lbs"
+    :src="youtubeLink"
     width="100%"
     height="720"
     title="YouTube video player"
@@ -17,35 +17,16 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
-  <!-- <YouTube
-    class="mx-auto my-auto w-full h-full"
-    :src="youtubeLink"
-    width=100%
-    height=720
-    aspectRatio="16:9"
-    @ready="onReady"
-    ref="youtube"
-  /> -->
 </template>
 
-<script>
-import { defineComponent } from "vue";
-import YouTube from "vue3-youtube";
+<script setup>
+const youtubeLink = ref("https://www.youtube.com/embed/paDfNTq0Lbs");
 
-export default defineComponent({
-  data() {
-    return {
-      youtubeLink: "https://www.youtube.com/embed/paDfNTq0Lbs",
-    };
-  },
-  components: { YouTube },
-  methods: {
-    onReady() {
-      this.$refs.youtube.playVideo();
-    },
-    searchEvent(event) {
-      this.youtubeLink = event.target.value;
-    },
-  },
-});
+const searchEvent = (e) => {
+  const link = e.target.value;
+  if (link.includes("v=")) {
+    const VideoID = link.split("v=")[1];
+    youtubeLink.value = `https://www.youtube.com/embed/${VideoID}`;
+  }
+}
 </script>
