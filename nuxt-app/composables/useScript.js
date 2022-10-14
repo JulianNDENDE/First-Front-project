@@ -1,5 +1,3 @@
-import { onUnmounted } from "vue";
-
 export default function (src) {
     return new Promise((resolve, reject) => {
         let script = document.querySelector(`script[src="${src}"]`);

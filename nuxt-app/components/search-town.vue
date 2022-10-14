@@ -9,19 +9,13 @@
   </label>
 </template>
 
-<script>
-import { onMounted, ref } from "vue";
-import useScript from "../composables/useScript";
-
-export default {
-  setup() {
-    const streetRef = ref(null);
-    onMounted(async () => {
-      streetRef.value.value = "";
-      await useScript("https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places");
-      new google.maps.places.Autocomplete(streetRef.value);
-    });
-    return { streetRef };
-  },
-};
+<script setup>
+const streetRef = useStreet();
+onMounted(async () => {
+  streetRef.value.value = "";
+  await useScript(
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyDlK3x2GtaW8P8gNa38w0iwB53bu2SGznI&libraries=places"
+  );
+  new google.maps.places.Autocomplete(streetRef.value);
+});
 </script>
