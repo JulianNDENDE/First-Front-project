@@ -46,9 +46,6 @@ npm run preview
 yarn add @vuepic/vue-datepicker
 # or
 npm install @vuepic/vue-datepicker
-
-# yarn
-yarn add vue3-youtube
 ```
 
 #### nuxt/Supabase
