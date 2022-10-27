@@ -20,6 +20,8 @@
     <h1 class="font-bold text-black text-4xl text-center">Input field Control</h1>
     <h2 class="font-bold text-black">Email :</h2>
     <email-input />
+    <h2 class="font-bold text-black">Url :</h2>
+    <url-input />
   </div>
 
   <div class="container mx-auto bg-gray-300 p-8 my-8">
