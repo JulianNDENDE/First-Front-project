@@ -3,7 +3,7 @@
     <input
       type="text"
       ref="streetRef"
-      placeholder="Recherchez une ville..."
+      placeholder="Research a town..."
       class="search-click mt-1 w-full text-sm placeholder-gray-400 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
     />
   </label>

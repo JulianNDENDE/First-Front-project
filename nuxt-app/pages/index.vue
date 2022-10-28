@@ -18,10 +18,12 @@
 
   <div class="container mx-auto bg-gray-300 p-8 my-8">
     <h1 class="font-bold text-black text-4xl text-center">Input field Control</h1>
-    <h2 class="font-bold text-black">Email :</h2>
-    <email-input />
-    <h2 class="font-bold text-black">Url :</h2>
-    <url-input />
+    <router-link to="/control">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Control page
+      </button>
+    </router-link>
+    
   </div>
 
   <div class="container mx-auto bg-gray-300 p-8 my-8">
