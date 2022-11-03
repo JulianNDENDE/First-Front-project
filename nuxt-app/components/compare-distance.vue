@@ -91,7 +91,7 @@ const deg2rad = (deg) => {
 
 const getDistanceFromLatLonInKm = (lat1, lon1, lat2, lon2) => {
   var R = 6371; // Radius of the earth in km
-  var dLat = deg2rad(lat2 - lat1); // deg2rad below
+  var dLat = deg2rad(lat2 - lat1);
   var dLon = deg2rad(lon2 - lon1);
   var a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
@@ -105,7 +105,6 @@ const getDistanceFromLatLonInKm = (lat1, lon1, lat2, lon2) => {
   return d;
 };
 
-// using google api get the latitude and longitude of the town
 const getDistance = async (town, center) => {
   const townResponse = await fetch(
     `https://maps.googleapis.com/maps/api/geocode/json?address=${town}&key=API_KEY`
@@ -123,7 +122,6 @@ const getDistance = async (town, center) => {
   return distance;
 };
 
-// return the closest center and the distance between the town and the center
 const getClosestCenter = async (town) => {
   let closestCenter = "";
   let distance = 0;
