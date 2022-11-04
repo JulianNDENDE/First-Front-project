@@ -39,6 +39,17 @@
   </div>
 
   <div class="container mx-auto bg-gray-300 p-8 my-8">
+    <h1 class="font-bold text-black text-4xl text-center">Only Search Bar</h1>
+    <router-link to="/OnlySearchBar">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Only Search Bar page
+      </button>
+    </router-link>
+  </div>
+
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
     <h1 class="font-bold text-black text-4xl text-center">Date picker</h1>
     <h2 class="font-bold text-black">Date picker :</h2>
     <datePicker />
@@ -47,8 +58,18 @@
   <div class="container mx-auto bg-gray-300 p-8 my-8">
     <h1 class="font-bold text-black text-4xl text-center">Share buttons</h1>
     <h2 class="font-bold text-black">Twitter and Facebook</h2>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/paDfNTq0Lbs" target="_blank"> Share </a>
-    <a href="https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/paDfNTq0Lbs" target="_blank"> Tweet </a>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/paDfNTq0Lbs"
+      target="_blank"
+    >
+      Share
+    </a>
+    <a
+      href="https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/paDfNTq0Lbs"
+      target="_blank"
+    >
+      Tweet
+    </a>
   </div>
 </template>
 
