@@ -43,6 +43,13 @@
     <h2 class="font-bold text-black">Date picker :</h2>
     <datePicker />
   </div>
+
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
+    <h1 class="font-bold text-black text-4xl text-center">Share buttons</h1>
+    <h2 class="font-bold text-black">Twitter and Facebook</h2>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/paDfNTq0Lbs" target="_blank"> Share </a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/paDfNTq0Lbs" target="_blank"> Tweet </a>
+  </div>
 </template>
 
 <script setup>
