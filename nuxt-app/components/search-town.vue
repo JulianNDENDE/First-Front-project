@@ -14,7 +14,7 @@ const streetRef = useStreet();
 onMounted(async () => {
   streetRef.value.value = "";
   await useScript(
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAOji3VX83IP1c-H0zqIr73R-nhLyTrSKc&libraries=places&language=fr&region=FR"
+    "https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&language=fr&region=FR"
   );
   // locationrestriction to france only
   const options = {
