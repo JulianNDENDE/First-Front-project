@@ -40,3 +40,78 @@
 .check-email:focus:invalid {
   box-shadow: 0 0 5px 1px red;
 }
+
+
+.pac-item {
+	font-size: 14px;
+	color: #d9d9d9;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.pac-item:hover {
+  background-color: #d9d9d9;
+  color: #000;
+  cursor: pointer;
+}
+
+.pac-item-selected {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.pac-item-selected:hover {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.pac-logo {
+  display: none;
+}
+
+.pac-container {
+  float: left;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: none;
+  cursor: default;
+  display: none;
+  margin-top: 2px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.pac-container:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -73px;
+  width: 0;
+  height: 0;
+  border-top: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  box-shadow: none;
+}
+
+.pac-container:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -74px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #999;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  z-index: 1;
+  box-shadow: none;
+}

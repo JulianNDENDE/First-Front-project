@@ -14,8 +14,19 @@ const streetRef = useStreet();
 onMounted(async () => {
   streetRef.value.value = "";
   await useScript(
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyB3IjjsiDJwNBWa1E4Ouk5H0hB3grc0G74&libraries=places"
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAOji3VX83IP1c-H0zqIr73R-nhLyTrSKc&libraries=places&language=fr&region=FR"
   );
-  new google.maps.places.Autocomplete(streetRef.value);
+  // locationrestriction to france only
+  const options = {
+    componentRestrictions: { country: "fr" },
+  };
+  const autocomplete = new google.maps.places.Autocomplete(
+    streetRef.value,
+    options
+  );
+  autocomplete.addListener("place_changed", () => {
+    const place = autocomplete.getPlace();
+    console.log(place);
+  });
 });
 </script>

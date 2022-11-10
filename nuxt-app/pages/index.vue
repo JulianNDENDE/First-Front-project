@@ -62,7 +62,7 @@
       href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/paDfNTq0Lbs"
       target="_blank"
     >
-      Share
+      Facebook
     </a>
     <a
       href="https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/paDfNTq0Lbs"
