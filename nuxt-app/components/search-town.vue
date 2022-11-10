@@ -16,7 +16,6 @@ onMounted(async () => {
   await useScript(
     "https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&language=fr&region=FR"
   );
-  // locationrestriction to france only
   const options = {
     componentRestrictions: { country: "fr" },
   };
