@@ -4,7 +4,6 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
      components: true,
 	 modules: [ '@nuxtjs/supabase', '@nuxtjs/tailwindcss' ],
-	 buildModules: [],
 	 css: ['@/assets/css/tailwind.css'],
 	 build: {
         transpile: ['@vuepic/vue-datepicker']
