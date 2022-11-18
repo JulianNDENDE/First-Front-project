@@ -22,4 +22,5 @@
     <h2 class="font-bold text-black">Town research :</h2>
     <compare-distance />
   </div>
+
 </template>

@@ -14,10 +14,11 @@ const streetRef = useStreet();
 onMounted(async () => {
   streetRef.value.value = "";
   await useScript(
-    "https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&language=fr&region=FR"
+    `https://maps.googleapis.com/maps/api/js?key=${"AIzaSyD_fRIMy-Kt5OmQYuadsrbXO-2uT-A8MN8"}&libraries=places&language=fr`
   );
   const options = {
-    componentRestrictions: { country: "fr" },
+    componentRestrictions: { country: ["fr", "gp", "gy", "gf", "mq", "re", "reu", "pm", "yt", "bl", "mf", "wf", "pf", "nc", ] },
+    types: ["(cities)"],
   };
   const autocomplete = new google.maps.places.Autocomplete(
     streetRef.value,

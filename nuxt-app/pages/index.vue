@@ -28,6 +28,17 @@
   </div>
 
   <div class="container mx-auto bg-gray-300 p-8 my-8">
+    <h1 class="font-bold text-black text-4xl text-center">Map</h1>
+    <router-link to="/map">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Map page
+      </button>
+    </router-link>
+  </div>
+
+  <div class="container mx-auto bg-gray-300 p-8 my-8">
     <h1 class="font-bold text-black text-4xl text-center">Town research tools</h1>
     <router-link to="/town">
       <button
