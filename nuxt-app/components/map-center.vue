@@ -42,5 +42,9 @@ const data = [
     adress: "9 avenue Charles de Gaulle",
   },
 ];
-const src = `https://www.google.com/maps/embed/v1/place?key=${"API_kEY"}&q=France&zoom=6`;
+var src = `https://www.google.com/maps/embed/v1/place?key=${"API_KEY"}&region=fr&zoom=12`;
+// for each hospital in data, add a marker on the map
+for (const hospital of data) {
+  src += `&q=${hospital.adress}+${hospital.city}`;
+}
 </script>
