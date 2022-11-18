@@ -42,5 +42,5 @@ const data = [
     adress: "9 avenue Charles de Gaulle",
   },
 ];
-const src = `https://www.google.com/maps/embed/v1/place?key=${"AIzaSyD_fRIMy-Kt5OmQYuadsrbXO-2uT-A8MN8"}&q=France&zoom=6`;
+const src = `https://www.google.com/maps/embed/v1/place?key=${"API_kEY"}&q=France&zoom=6`;
 </script>
